@@ -21,25 +21,25 @@ export const Signup = () => {
     let errors = 0;
     const handleClick = async (e) => {
         e.preventDefault();
-        if (!user.trim()) {
+        if (user.trim()==="") {
             setUserError('Username is required.'); errors++;
         }
-        if (!email.trim()) {
+        if (email.trim()==="") {
             setEmailError('Email is required.'); errors++;
         }
-        if (!password.trim()) {
+        if (password.trim()==="") {
             setPasswordError('Password is required.'); errors++;
         }
-        if (user.length < 3) {
+        if (user.trim()!=="" &&  user.length < 3) {
             setUserError('Username must have atleast 3 letters.'); errors++;
         }
-        if (!(/\d/.test(user))) {
+        if (user.trim()!=="" && /\d/.test(user)) {
             setUserError("Username can't contain numbers."); errors++;
         }
-        if (password.length < 8) {
+        if ( password.trim()!=="" && password.length < 8) {
             setPasswordError('Password must be atleast 8 characters long.'); errors++;
         }
-        if (!(/gmail\.com$/i.test(email))) {
+        if (email.trim()!=="" && !(/gmail\.com$/i.test(email))) {
             setEmailError('Email must contain @gmail.com'); errors++;
         }
         if (errors != 0) return;

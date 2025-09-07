@@ -2,7 +2,6 @@ import { Navbar } from '../components/navbar'
 import { motion } from "framer-motion"
 import { useEffect, useState } from "react"
 import cropseason from '../assets/cropseason.jpg'
-import crop from '../assets/crop.jpg'
 
 export const Home = () => {
   const fullText = "Empowering Farmers With Simple, Smart and Sustainable Solutions"
@@ -38,7 +37,7 @@ export const Home = () => {
         </div>
         <motion.div className="w-screen h-fit flex 2sm:flex-row 2sm:gap-[20px] flex-col gap-[8px] mt-[5]" initial={{scaleY:0,opacity:0}} whileInView={{scaleY:1,opacity:1}} viewport={{once:true}} transition={{duration:0.2,ease:"easeInOut"}}>
             <header className="text-wrap  2sm:w-[450px] 2sm:text-[70px] 2sm:ms-15 1sm:w-[300px] 1sm:text-[50px] 1sm:ms-15 font-bold w-[200px] text-[35px] ms-15"><span className="text-white">Get Real Time</span>  <span className="text-blue-500">Weather Info</span></header>
-            <img className="rounded-full ms-50 justify-self-end-safe" width="400px" height="400px" src={cropseason}/>
+            <img className="rounded-full 2sm:ms-50 justify-self-end-safe" width="400px" height="400px" src={cropseason}/>
         </motion.div>
         <motion.div className="w-screen mt-25 h-fit flex 2sm:flex-row 2sm:gap-[20px] flex-col gap-[8px]" initial={{scaleY:0,opacity:0}} whileInView={{scaleY:1,opacity:1}} viewport={{once:true}} transition={{duration:0.2,ease:"easeInOut"}}>
             <header className="text-wrap  2sm:text-[70px] 2sm:ms-15  1sm:text-[50px] 1sm:ms-15 font-bold  text-[35px] ms-15"><span className="text-black">And</span> <span className="text-yellow-500">Soil Data...</span></header>

@@ -14,16 +14,16 @@ export const Login = () => {
     let errors=0;
     const handleClick = async (e)=>{
         e.preventDefault();
-        if(!email.trim()){
+        if(email.trim()===""){
             setEmailError("Email can't be empty.");errors++;
         }
-        if(!password.trim()){
+        if(password.trim()===""){
             setPasswordError("Password can't be empty.");errors++;
         }
-        if(!(/gmail\.com$/i.test(email))){
+        if(email.trim()!=="" &&  !(/gmail\.com$/i.test(email))){
             setEmailError("Email must contain @gmail.com");errors++;
         }
-        if(password.length<8){
+        if(password.trim()!=="" && password.length<8){
             setPasswordError("Password must be of a minimum length of 8");errors++;
         }
         if(errors!=0)return;
@@ -56,7 +56,7 @@ export const Login = () => {
                         {passwordError && (<p className="text-red-500 mb-[20px] font-semibold">{passwordError}</p>)}
                     </div>
                     <div className="bg-transparent w-full h-fit flex  justify-center mt-[20px] mb-[20px]">
-                        <button className="pt-[10px] [@media(max-width:540px)]:pt-[8px] pb-[10px] [@media(max-width:540px)]:pb-[8px] ps-[150px] [@media(max-width:540px)]:ps-[100px] pe-[150px] [@media(max-width:540px)]:pe-[100px] rounded-[10px] bg-blue-500 cursor-pointer border-black border-2 outline-black outline-2 over:bg-white/5 hover:backdrop-blur-[25px]" onClick={handleClick}>Login</button>
+                        <button className="pt-[10px] [@media(max-width:540px)]:pt-[8px] pb-[10px] [@media(max-width:540px)]:pb-[8px] ps-[150px] [@media(max-width:540px)]:ps-[100px] pe-[150px] [@media(max-width:540px)]:pe-[100px] rounded-[10px] bg-blue-500 cursor-pointer border-black border-2 outline-black outline-2 hover:bg-white/5 hover:backdrop-blur-[25px]" onClick={handleClick}>Login</button>
                     </div>
                 </div>
             </div>
