@@ -1,0 +1,12 @@
+@import 'tailwindcss';
+@theme{
+    --color-green-930:#0c3a20;
+    --color-green-940:#08341b;
+    --color-green-960:#041f10;
+    --color-green-970:#03170c;
+    --color-green-980:#020f08;
+    --breakpoint-2sm:43.75rem;
+    --breakpoint-1xm:37.5rem;
+    --breakpoint-1sm:31.25rem;
+    --breakpoint-1xs:20rem; 
+}
