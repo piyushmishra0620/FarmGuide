@@ -35,14 +35,14 @@ export const Home = () => {
             />
           </motion.header>
         </div>
-        <motion.div className="w-screen h-fit flex 2sm:flex-row 2sm:gap-[20px] flex-col gap-[8px] mt-[5]" initial={{opacity:0,y:10}} whileInView={{opacity:1,y:0}} viewport={{once:true}} transition={{duration:0.5,ease:"easeInOut"}}>
+        <motion.div className="w-screen h-fit flex 2sm:flex-row 2sm:gap-[20px] flex-col gap-[8px] mt-[5]" initial={{opacity:0,y:25}} whileInView={{opacity:1,y:0}} viewport={{once:true}} transition={{duration:0.5,ease:"easeInOut"}}>
             <header className="text-wrap  2sm:w-[450px] 2sm:text-[70px] 2sm:ms-15 1sm:w-[300px] 1sm:text-[50px] 1sm:ms-15 font-bold w-[200px] text-[35px] ms-15"><span className="text-white">Get Real Time</span>  <span className="text-blue-500">Weather Info</span></header>
             <img className="rounded-full 2sm:ms-50 justify-self-end-safe" width="400px" height="400px" src={cropseason}/>
         </motion.div>
-        <motion.div className="w-screen mt-25 h-fit flex 2sm:flex-row 2sm:gap-[20px] flex-col gap-[8px]" initial={{y:10,opacity:0}} whileInView={{y:0,opacity:1}} viewport={{once:true}} transition={{duration:0.5,ease:"easeInOut"}}>
+        <motion.div className="w-screen mt-25 h-fit flex 2sm:flex-row 2sm:gap-[20px] flex-col gap-[8px]" initial={{y:25,opacity:0}} whileInView={{y:0,opacity:1}} viewport={{once:true}} transition={{duration:0.5,ease:"easeInOut"}}>
             <header className="text-wrap  2sm:text-[70px] 2sm:ms-15  1sm:text-[50px] 1sm:ms-15 font-bold  text-[35px] ms-15"><span className="text-black">And</span> <span className="text-yellow-500">Soil Data...</span></header>
         </motion.div>
-        <motion.div className="w-screen mt-25 h-fit flex 2sm:flex-row 2sm:gap-[20px] flex-col gap-[8px]" initial={{y:10,opacity:0}} whileInView={{y:0,opacity:1}} viewport={{once:true}} transition={{duration:0.5,ease:"easeInOut"}}>
+        <motion.div className="w-screen mt-25 h-fit flex 2sm:flex-row 2sm:gap-[20px] flex-col gap-[8px]" initial={{y:25,opacity:0}} whileInView={{y:0,opacity:1}} viewport={{once:true}} transition={{duration:0.5,ease:"easeInOut"}}>
         <header className="text-wrap  2sm:text-[70px] 2sm:ms-15  1sm:text-[50px] 1sm:ms-15 font-bold  text-[35px] ms-15 text-black">And Solve Any Of Your Queries with FarmGuide</header>
         </motion.div>
       </div>
